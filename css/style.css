@@ -159,7 +159,7 @@ ul, ol {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/intro-bg.jpg) no-repeat bottom center;
+	background: url(../images/intro-bg.jpg) no-repeat bottom center;
 	background-color: #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -577,6 +577,60 @@ ol.type li a:hover {
 	color: #F4D03F;
 }
 /* Testimonials Section */
+/*#testimonials {
+	background: url(../images/testimonial-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ddd;
+	padding: 80px 0;
+}*/
+/*#testimonial {
+	padding: 0;
+}
+@keyframes show1{
+	from{
+		opacity: 0;
+		transform: scale(0);
+		
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+#testimonial .item {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#testimonial .item p {
+	font-weight: 500;
+	margin: 30px 0;
+	font-size:20px;
+	line-height:40px;
+	color: #ddd;
+}
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=1);
+	opacity: 1;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 20px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	transition: all 0.5s;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	filter: Alpha(Opacity=100);
+	opacity: 1;
+	background: #F4D03F;
+}
+.owl-theme .owl-controls .owl-page.active span {
+	background: #F4D03F;
+}*/
 #testimonials {
 	background: url(../images/testimonial-bg.jpg);
 	background-size: cover;
@@ -587,10 +641,33 @@ ol.type li a:hover {
 #testimonial {
 	padding: 0;
 }
+@keyframes show1{
+	from{
+		opacity: 0;
+		transform: scale(0);
+		
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+#testimonial .item-box{
+	height: 140px;
+	position: relative;
+	overflow: hidden;
+}
 #testimonial .item {
 	display: block;
 	width: 100%;
 	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+#testimonial .active1{
+	animation: show1 0.35s ease-in-out 0s forwards;
 }
 #testimonial .item p {
 	font-weight: 500;
